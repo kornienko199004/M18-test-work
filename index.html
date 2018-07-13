@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Fix ремонт</title>
-    <link rel="stylesheet" href="">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="visually-hidden">
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+    </div>
     <header class="page-header">
       <div class="page-header__column page-header__column--left">
         <div class="page-header__logo"><a href="#">Fix ремонт</a></div>
@@ -16,15 +19,15 @@
           </p>
         </div>
         <div class="page-header__wrapper">
-          <button class="page-header__button">Узнайте о запуске первым</button>
-          <span>Старт весной 2016</span>
+          <button class="page-header__button button button--round">Узнайте о запуске первым</button>
+          <span class="page-header__start">Старт весной 2016</span>
         </div>
-        <button class="page-header__button">
+        <button class="page-header__button button button--scroll">
           Листайте вниз, чтобы ничего не упустить
         </button>
       </div>
       <div class="page-header__column page-header__column--right">
-        <button class="page-header__button">Контакты</button>
+        <button class="page-header__button button button--contacts">Контакты</button>
       </div>
     </header>
     <main class="page-container">
@@ -35,26 +38,26 @@
         </div>
         <div class="features__inner">
           <section class="feature">
-            <h3 class="feature__tittle">Опытная команда</h3>
+            <h3 class="feature__title">Опытная команда</h3>
             <p class="feature__caption">Команда проектировщиков и строителей со стажем работы более 6 лет</p>
           </section>
           <section class="feature">
-            <h3 class="feature__tittle">Фиксированная смета</h3>
+            <h3 class="feature__title">Фиксированная смета</h3>
             <p class="feature__caption">Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора</p>
           </section>
           <section class="feature">
-            <h3 class="feature__tittle">Типовые дизайн-проекты</h3>
+            <h3 class="feature__title">Типовые дизайн-проекты</h3>
             <p class="feature__caption">Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг</p>
           </section>
           <section class="feature feature__time">
-            <h3 class="feature__tittle">Срок работ</h3>
-            <p class="feature__caption">3 месяца</p>
+            <h3 class="feature__tittle feature__tittle">Срок работ</h3>
+            <p class="feature__caption feature__caption--time">3 месяца</p>
           </section>
         </div>
       </section>
       <div class="disigns-slider">
         <h2 class="disigns-slider__title">3 стиля интерьера</h2>
-        <p class="disign-slider__caption">Скандинавский, классический и эко-стиль</p>
+        <p class="disigns-slider__caption">Скандинавский, классический и эко-стиль</p>
         <section class="slider-item">
           <h3 class="visually-hidden">Скандинавский стиль</h3>
           <p class="slider-item__image">
@@ -84,7 +87,7 @@
         </section>
       </div>
       <section class="form-wrapper">
-        <form action="" class="write-us">
+        <form class="write-us">
           <fieldset class="write-us__fieldset">
             <legend class="write-us__legend">
               <h2 class="write-us__title">Узнайте о запуске сервиса первым</h2>
@@ -95,7 +98,7 @@
             <input type="text" class="write-us__input" name ="fist-second-name" placeholder="Имя и фамилия*">
             <input type="text" class="write-us__input" name ="email" placeholder="E-mail адрес*">
             <input type="text" class="write-us__input" name ="phone-number" placeholder="Телефон*">
-            <button class="write-us__button button" type="submit">Подписаться</button>
+            <button class="write-us__button button button--round" type="submit">Подписаться</button>
             <div class="write-us__wrapper">
               <span class="write-us__caption">*Обязательные для заполнения поля</span>
               <a href="#" class="write-us__link">Политика конфиденциальности</a>
@@ -113,18 +116,18 @@
         </div>
       </div>
       <div class="page-footer__wrapper page-footer__wrapper--about-us">
-        <b class="page-footer__title">Следите за нашим развитием</b>
+        <span class="page-footer__title">Следите за нашим развитием</span>
         <p class="page-footer__caption">
           Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет
         </p>
       </div>
       <div class="page-footer__wrapper page-footer__wrapper--contacts contacts">
-        <div class="contacts__phone">+7(812)903-54-45</div>
-        <div class="contacts__address">
-          <b>Ул.Галерная, д.55,</b>
-          <span>Санкт-Петербург</span>
+        <div class="contacts__item contacts__item--phone">+7(812)903-54-45</div>
+        <div class="contacts__item contacts__item--address">
+          <span>Ул.Галерная, д.55,</span>
+          <span class="contacts__town">Санкт-Петербург</span>
         </div>
-        <div class="contacts__email">9035445@gmail.com</div>
+        <div class="contacts__item contacts__item--email">9035445@gmail.com</div>
       </div>
       <div class="page-footer__wrapper page-footer__wrapper--copywrites">
         <div class="copywrites">СFix Ремонт,2016</div>

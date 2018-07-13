@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/kornienko199004/M18-test-work#readme",
   "devDependencies": {
-    "autoprefixer": "7.1.x",
+    "autoprefixer": "^7.1.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
@@ -49,5 +49,10 @@
     "postcss-sorting": "^3.1.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "dependencies": {
+    "engine.io": "^3.2.0",
+    "expand-range": "^2.0.1"
+  },
+  "keywords": []
 }

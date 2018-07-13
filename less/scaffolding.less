@@ -1,0 +1,56 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: @font-common;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.button {
+  border: none;
+  font-family: @font-button;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button--scroll {
+  background-color: rgb(255, 255, 255);
+  color: @orange;
+}
+
+.button--round {
+  background-color: @button-color;
+  color: rgb(255, 255, 255);
+}
+
+.button--contacts {
+  font-size: 21px;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+}
