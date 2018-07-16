@@ -1,10 +1,35 @@
+.features {
+  width: @common-width;
+  margin: 0 auto;
+  padding-top: 176px;
+  margin-bottom: 86px;
+}
+
 .features__title  {
   font-family: @font-title;
   font-size: 40px;
   line-height: 50px;
+  .null-indents();
+  margin-bottom: 9px;
 }
 
 .features__caption {
   text-transform: uppercase;
   color: @border-color;
+  .null-indents();
+  padding-left: 1px;
+  font-stretch: ultra-expanded;
+  letter-spacing: 0.03em;
+  word-spacing: 1px;
+}
+
+.features__inner:nth-of-type(1) {
+  margin-bottom: 62px;
+}
+
+.features__inner--flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: start;
 }

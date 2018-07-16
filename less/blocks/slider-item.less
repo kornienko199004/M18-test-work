@@ -1,5 +1,31 @@
+.slider-item {
+  display: flex;
+  box-sizing: border-box;
+  width: @common-width;
+  padding-top: 36px;
+}
+
 .slider-item__caption {
+  .null-indents();
+  padding-top: 15px;
   color: @text-color;
   font-size: 13px;
   line-height: 20px;
+  width: 150px;
+}
+
+.slider-item--left {
+  position: absolute;
+  left: -@common-width/2;
+//  left: 0;
+}
+
+.slider-item--right {
+  position: absolute;
+  right: -@common-width/2;
+//  left: @common-width;
+}
+
+.slider-item__image {
+  margin-right: 18px;
 }
