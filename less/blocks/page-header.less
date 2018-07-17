@@ -1,11 +1,12 @@
 .page-header {
   display: flex;
   box-sizing: border-box;
-  padding-left: 3%;
+  padding-left: 5.5%;
+  padding-right: 2.2%;
   margin: 0 auto;
   height: 100vh;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .page-header__title {
@@ -35,12 +36,13 @@
   margin-right: 2%;
   height: 100%;
   box-sizing: border-box;
+  padding-top: 38px;
+  padding-bottom: 36px;
 }
 
 .page-header__logo {
   padding-left: 4px;
   width: 100%;
-//  margin-bottom: 20%;
 }
 
 .page-header__text {
@@ -49,14 +51,10 @@
   padding-left: 4px;
 }
 
-.page-header__wrapper--text {
-//  margin-bottom: 10%;
-}
 .page-header__wrapper--button  {
   padding-left: 4px;
-  //border: 1px solid green;
   width: 100%;
-//  margin-bottom: 15%;
+  box-sizing: border-box;
 }
 
 .page-header__start {
@@ -64,27 +62,61 @@
 }
 
 .page-header__column--right {
-//  display: flex;
-//  min-width: 50%;
   width: 100%;
   min-width: 300px;
-//  flex-basis: 942px;
   padding-top: 19px;
   padding-right: 10px;
   position: relative;
-  //border: 1px solid red;
   box-sizing: border-box;
-//  height: 100%;
   background-image: url("../img/video.jpg");
   background-size: contain;
-//  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-//  padding-right: 20px;
 }
 
 .page-header__button--contacts {
   position: absolute;
-  right: 83px;
-  top: 58px;
+  right: 84px;
+  top: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -25px;
+    top: 5px;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-header__text--play {
+  color: @orange;
+  position: absolute;
+  top: 59%;
+  left: 41.5%;
+  width: auto;
+}
+
+.page-header__button--play {
+  /*width: 250px;
+  height: 250px;*/
+  width: 26.6%;
+  height: 26.6%;
+  position: absolute;
+  left: 36.8%;
+  top: 30.7%;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/svg/playbutton.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/svg/playbutton_hover.svg");
+    outline: none;
+  }
 }

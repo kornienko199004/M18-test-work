@@ -5,14 +5,7 @@ body {
   background-color: white;
   padding: 0;
   margin: 0;
-  //width: 100%;
-  //min-width: 1000px;
 }
-/*
-img {
-  max-width: 100%;
-  height: auto;
-}*/
 
 .visually-hidden,
 .visually-hidden:not(:focus):not(:active),
@@ -47,10 +40,29 @@ h1, h2, h3 {
   width: 300px;
   text-align: left;
   box-sizing: border-box;
-//  border: 1px solid black;
   height: 50px;
   padding-left: 62px;
-  //align-self: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 10px;
+    top: 12px;
+    background-image: url("../img/svg/arrows_down.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    &::before {
+      background-image: url("../img/svg/arrows_down_hover.svg");
+      left: 14px;
+    }
+  }
 }
 
 .button--round {
@@ -61,6 +73,15 @@ h1, h2, h3 {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 50px;
+  box-shadow: 0 7px 15px rgba(249, 87, 46, 0.6);
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0 15px 20px rgba(249, 87, 46, 0.7);
+    background-color: rgb(255, 123, 89);
+    outline: none;
+  }
 }
 
 .button--contacts {
@@ -68,4 +89,11 @@ h1, h2, h3 {
   line-height: 30px;
   background-color: rgb(255, 255, 255);
   background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: @orange;
+    outline: none;
+  }
 }

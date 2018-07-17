@@ -33,6 +33,10 @@
 			</div>
 			<div class="page-header__column page-header__column--right">
 				<button class="page-header__button page-header__button--contacts button button--contacts">Контакты</button>
+				<button class="page-header__button page-header__button--play">
+					<span class="visually-hidden">Запустить видео</span>
+				</button>
+				<span class="page-header__text page-header__text--play">Смотреть видео</span>
 			</div>
 		</header>
 		<main class="page-container">
@@ -66,6 +70,14 @@
 					<p class="disigns-slider__caption">Скандинавский, классический и эко-стиль</p>
 				</div>
 				<div class="disigns-slider__wrapper disigns-slider__wrapper--flex">
+					<div class="disigns-slider__control">
+						<button class="disigns-slider__button disigns-slider__button--prev">
+							<span class="visually-hidden">Предыдущий слайд</span>
+						</button>
+						<button class="disigns-slider__button disigns-slider__button--next">
+							<span class="visually-hidden">Следующий слайд</span>
+						</button>
+					</div>
 					<section class="slider-item slider-item--left">
 						<h3 class="visually-hidden">Скандинавский стиль</h3>
 						<p class="slider-item__image">
@@ -105,12 +117,15 @@
 							Первым 10 клиентам стальная входная дверь в подарок
 						</p>
 						<label class="write-us__label">
+							<span class="write-us__input-caption write-us__input-caption--name visually-hidden">Имя и фамилия*</span>
 							<input type="text" class="write-us__input" name ="fist-second-name" placeholder="Имя и фамилия*">
 						</label>
 						<label class="write-us__label">
+							<span class="write-us__input-caption write-us__input-caption--email visually-hidden">E-mail адрес*</span>
 							<input type="text" class="write-us__input" name ="email" placeholder="E-mail адрес*">
 						</label>
 						<label class="write-us__label">
+							<span class="write-us__input-caption write-us__input-caption--phone visually-hidden">Телефон*</span>
 							<input type="text" class="write-us__input" name ="phone-number" placeholder="Телефон*">
 						</label>
 						<button class="write-us__button button button--round" type="submit">Подписаться</button>
@@ -125,9 +140,24 @@
 		<footer class="page-footer">
 			<div class="page-footer__wrapper">
 				<div class="page-footer__social">
-					<a href="#" class="social-button"><span class="visually-hidden">Facebook</span></a>
-					<a href="#" class="social-button"><span class="visually-hidden">Vkontakte</span></a>
-					<a href="#" class="social-button"><span class="visually-hidden">Instagram</span></a>
+					<a href="#" class="social-button">
+						<span class="visually-hidden">Facebook</span>
+						<svg class="user-nav__svg user-nav__svg--user" fill="currentColor" width="11px" height="22.5px" viewBox="0 0 11.45 22.5">
+							<use xlink:href="img/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+					<a href="#" class="social-button">
+						<span class="visually-hidden">Vkontakte</span>
+						<svg class="user-nav__svg user-nav__svg--user" fill="currentColor" width="28.48px" height="22.5px" viewBox="0 0 28.48 16.25">
+							<use xlink:href="img/sprite.svg#vk"></use>
+						</svg>
+					</a>
+					<a href="#" class="social-button">
+						<span class="visually-hidden">Instagram</span>
+						<svg class="user-nav__svg user-nav__svg--user" fill="currentColor" width="22.5px" height="22.5px" viewBox="0 0 22.5 22.5">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a>
 				</div>
 			</div>
 			<div class="page-footer__wrapper page-footer__wrapper--about-us">
@@ -142,7 +172,7 @@
 					<span>Ул. Галерная, д 55,</span>
 					<span class="contacts__town">Санкт-Петербург</span>
 				</div>
-				<div class="contacts__item contacts__item--email">9035445@gmail.com</div>
+				<a href="#" class="contacts__item contacts__item--email">9035445@gmail.com</a>
 			</div>
 			<div class="page-footer__wrapper page-footer__wrapper--copywrites">
 				<div class="copywrites">&copy; FIX Ремонт, 2016</div>

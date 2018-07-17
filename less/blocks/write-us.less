@@ -38,6 +38,18 @@
   letter-spacing: 0.03em;
   word-spacing: 1px;
   margin-bottom: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 69px;
+    left: -8px;
+    top: 3px;
+    background-image: url("../img/svg/door.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .write-us__input {
@@ -48,7 +60,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   border-radius: 5px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 2px solid rgb(204, 204, 204);
   padding-left: 25px;
   padding-top: 16px;
   padding-bottom: 18px;
@@ -60,6 +72,11 @@
     font-family: @font-common;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  &:focus {
+    border-color: @orange;
+    outline: none;
   }
 }
 
@@ -90,8 +107,20 @@
 
 .write-us__label {
   width: 100%;
+  position: relative;
 }
 
 .write-us__label:last-of-type {
   margin-bottom: 18px;
+}
+
+.write-us__input-caption {
+  position: absolute;
+  left: 26%;
+  top: -7px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 5px;
+  padding-right: 5px;
+  color: @orange;
+  font-size: 13px;
 }
