@@ -24,7 +24,7 @@
 					</p>
 				</div>
 				<div class="page-header__wrapper page-header__wrapper--button">
-					<button class="page-header__button button button--round">Узнайте о запуске первым</button>
+					<button class="page-header__button button button--round button--form-scroll">Узнайте о запуске первым</button>
 					<span class="page-header__start">Старт весной 2016</span>
 				</div>
 				<button class="page-header__button button button--scroll">
@@ -87,7 +87,7 @@
 							Кафельная плитка в&nbsp;ванной комнате в&nbsp;скандинавском стиле
 						</p>
 					</section>
-					<section class="slider-item">
+					<section class="slider-item slider-item--active">
 						<h3 class="visually-hidden">Классический стиль</h3>
 						<p class="slider-item__image">
 							<img src="img/slider_image_2.jpg" alt="Классический стиль" width="752" height="501">
@@ -113,25 +113,30 @@
 						<legend class="write-us__legend">
 							<h2 class="write-us__title">Узнайте о запуске сервиса первым</h2>
 						</legend>
-						<p class="write-us__special">
-							Первым 10 клиентам стальная входная дверь в подарок
-						</p>
-						<label class="write-us__label">
-							<span class="write-us__input-caption write-us__input-caption--name visually-hidden">Имя и фамилия*</span>
-							<input type="text" class="write-us__input" name ="fist-second-name" placeholder="Имя и фамилия*">
-						</label>
-						<label class="write-us__label">
-							<span class="write-us__input-caption write-us__input-caption--email visually-hidden">E-mail адрес*</span>
-							<input type="text" class="write-us__input" name ="email" placeholder="E-mail адрес*">
-						</label>
-						<label class="write-us__label">
-							<span class="write-us__input-caption write-us__input-caption--phone visually-hidden">Телефон*</span>
-							<input type="text" class="write-us__input" name ="phone-number" placeholder="Телефон*">
-						</label>
-						<button class="write-us__button button button--round" type="submit">Подписаться</button>
-						<div class="write-us__wrapper">
-							<span class="write-us__caption">*Обязательные для заполнения поля</span>
-							<a href="#" class="write-us__link">Политика конфиденциальности</a>
+						<div class="write-us__modal write-us__modal--form">
+							<p class="write-us__special">
+								Первым 10 клиентам стальная входная дверь в подарок
+							</p>
+							<label class="write-us__label">
+								<span class="write-us__input-caption write-us__input-caption--name visually-hidden">Имя и фамилия*</span>
+								<input type="text" class="write-us__input" name ="fist-second-name" placeholder="Имя и фамилия*" required>
+							</label>
+							<label class="write-us__label">
+								<span class="write-us__input-caption write-us__input-caption--email visually-hidden">E-mail адрес*</span>
+								<input type="text" class="write-us__input" name ="email" placeholder="E-mail адрес*" required pattern="\S+@[a-z]+.[a-z]+">
+							</label>
+							<label class="write-us__label">
+								<span class="write-us__input-caption write-us__input-caption--phone visually-hidden">Телефон*</span>
+								<input type="tel" class="write-us__input" name ="phone-number" placeholder="Телефон*" required>
+							</label>
+							<button class="write-us__button button button--round" type="submit">Подписаться</button>
+							<div class="write-us__wrapper">
+								<span class="write-us__caption">*Обязательные для заполнения поля</span>
+								<a href="#" class="write-us__link">Политика конфиденциальности</a>
+							</div>
+						</div>
+						<div class="write-us__modal write-us__modal--submit">
+							<span class="write-us__text">Спасибо! Мы будем держать вас в курсе обновлений</span>
 						</div>
 					</fieldset>
 				</form>
@@ -178,6 +183,7 @@
 				<div class="copywrites">&copy; FIX Ремонт, 2016</div>
 			</div>
 		</footer>
+		<script src="js/script.js"></script>
 
 	</body>
 </html>
